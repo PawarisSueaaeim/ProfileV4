@@ -5,7 +5,7 @@ export default function Home() {
     const t = useTranslations("Homepage");
 
     return (
-        <div>
+        <div className="dark:text-DARK_WHITE">
             <ol>
                 <li>{t("title1")}</li>
 				<li>{t("title2")}</li>

@@ -4,6 +4,10 @@ import {
     COLOR_QUATERNARY,
     COLOR_SECONDARY,
     COLOR_TERTIARY,
+    DARK_BLACK,
+    DARK_GRAY,
+    DARK_GREEN,
+    DARK_WHITE,
 } from "./constants/COLORS";
 
 export default {
@@ -19,11 +23,13 @@ export default {
                 COLOR_SECONDARY: COLOR_SECONDARY,
                 COLOR_TERTIARY: COLOR_TERTIARY,
                 COLOR_QUATERNARY: COLOR_QUATERNARY,
-            },
-            boxShadow: {
-                intense: "2px 5px 10px 2px rgba(0,0,0,0.2)",
+                DARK_BLACK: DARK_BLACK,
+                DARK_GRAY: DARK_GRAY,
+                DARK_GREEN: DARK_GREEN,
+                DARK_WHITE: DARK_WHITE,
             },
         },
     },
     plugins: [],
+    darkMode: "class",
 } satisfies Config;
