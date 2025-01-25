@@ -42,9 +42,11 @@ export default async function RootLayout({
                         }`}
                     >
                         <ThemeProvider>
-                            <Navbar />
                             <div className="min-h-screen bg-COLOR_PRIMARY dark:bg-DARK_BLACK">
-                                <div className="container">{children}</div>
+                                <Navbar />
+                                <div className="container">
+                                    {children}
+                                </div>
                             </div>
                         </ThemeProvider>
                     </body>

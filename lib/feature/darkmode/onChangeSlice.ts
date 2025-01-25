@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "@/lib/store";
+import { getCookie, setCookie } from "@/helper/cookie";
 
 export type tInitialState = {
     isDarkMode: boolean,
 };
 
 const initialState: tInitialState = {
-    isDarkMode: false,
+    isDarkMode: getCookie('isDarkMode') ? getCookie('isDarkMode') === 'true' : false,
 };
 
 const onChangeSlice = createSlice({
@@ -15,6 +16,7 @@ const onChangeSlice = createSlice({
     reducers: {
         setIsDarkMode: (state, _) => {
             state.isDarkMode = !state.isDarkMode;
+            setCookie('isDarkMode', state.isDarkMode.toString(), 10000);
         },
     },
 })
