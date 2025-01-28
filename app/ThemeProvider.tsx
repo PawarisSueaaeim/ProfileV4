@@ -9,7 +9,7 @@ import { tTheme } from "@/utils/types/theme";
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 
 type Props = {
-    theme?: RequestCookie | undefined;
+    theme?: RequestCookie | tTheme | undefined;
     children: React.ReactNode;
 };
 
@@ -33,7 +33,7 @@ export default function ThemeProvider({ theme, children }: Props) {
     return (
         <div className={isDarkMode}>
             {children}
-            <div className="fixed bottom-10 right-10 bg-DARK_GREEN dark:bg-COLOR_PRIMARY p-4 rounded-full hover:scale-150 duration-300 shadow-2xl">
+            <div className="fixed bottom-4 right-4 bg-DARK_GREEN dark:bg-COLOR_PRIMARY p-4 rounded-full hover:scale-150 duration-300 shadow-2xl">
                 <button className="flex justify-center items-center">
                     {isDarkMode === 'light' ? (
                         <FaRegMoon

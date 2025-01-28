@@ -1,3 +1,4 @@
+import ButtonPrimary from "@/common/button/ButtonPrimary";
 import React from "react";
 import { IoMdMenu } from "react-icons/io";
 
@@ -11,9 +12,11 @@ export default function Navbar({}: Props) {
                 <span className="flex justify-end text-[8px]">Rabeab</span>
             </div>
             <div></div>
-            <div><IoMdMenu/></div>
-            <div className="fixed h-screen bg-COLOR_SECONDARY dark:bg-DARK_GRAY">
-
+            <div className="flex items-center justify-center gap-2">
+                <div><IoMdMenu/></div>
+                <div className="bg-COLOR_SECONDARY dark:bg-DARK_GRAY">
+                    <ButtonPrimary title="text" className="text-DARK_WHITE bg-DARK_BLACK" onClick={() => {}}/>
+                </div>
             </div>
         </div>
     );
