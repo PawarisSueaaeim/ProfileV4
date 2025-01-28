@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import Navbar from "@/components/Navbar";
 import StoreProvider from "./StoreProvider";
 import ThemeProvider from "./ThemeProvider";
+import { cookies } from "next/headers";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -28,6 +29,7 @@ export default async function RootLayout({
     children: React.ReactNode;
 }>) {
     const locale = await getLocale();
+    const storeCookie = await cookies();
 
     const message = await getMessages();
     return (
@@ -41,7 +43,9 @@ export default async function RootLayout({
                                 : noto_sans_thai.className
                         }`}
                     >
-                        <ThemeProvider>
+                        <ThemeProvider
+                            theme={storeCookie.get('theme')}
+                        >
                             <div className="min-h-screen bg-COLOR_PRIMARY dark:bg-DARK_BLACK">
                                 <Navbar />
                                 <div className="container">

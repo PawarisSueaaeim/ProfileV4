@@ -1,22 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "@/lib/store";
-import { getCookie, setCookie } from "@/helper/cookie";
+import { tTheme } from "@/utils/types/theme";
+import { setCookie } from "@/utils/function/cookie";
 
 export type tInitialState = {
-    isDarkMode: boolean,
+    isDarkMode: tTheme,
 };
 
 const initialState: tInitialState = {
-    isDarkMode: getCookie('isDarkMode') ? getCookie('isDarkMode') === 'true' : false,
+    isDarkMode: 'dark',
 };
 
 const onChangeSlice = createSlice({
     name: 'onChangeSlice',
     initialState: initialState,
     reducers: {
-        setIsDarkMode: (state, _) => {
-            state.isDarkMode = !state.isDarkMode;
-            setCookie('isDarkMode', state.isDarkMode.toString(), 10000);
+        setIsDarkMode: (state, action) => {
+            const { value } = action.payload;
+            state.isDarkMode = value;
+            // setCookie('theme', state.isDarkMode, 10000);
+            console.log(value);
         },
     },
 })
