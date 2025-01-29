@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import onChangeSlice from './feature/darkmode/onChangeSlice'
 import { useDispatch } from 'react-redux';
+import onChangeSlice from './feature/darkmode/onChangeSlice'
+import onChangeMultiLanguageSlice from './feature/multilanguage/onChangeLanguageSlice';
 
 export const store = configureStore({
     reducer: {
-        onChangeSlice
+        onChangeSlice,
+        onChangeMultiLanguageSlice
     },
 })
 

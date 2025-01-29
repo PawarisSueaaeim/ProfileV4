@@ -1,22 +1,20 @@
 import ButtonPrimary from "@/common/button/ButtonPrimary";
 import React from "react";
 import { IoMdMenu } from "react-icons/io";
+import MultiLanguage from "./MultiLanguage";
 
 type Props = {};
 
 export default function Navbar({}: Props) {
     return (
-        <div className="flex justify-between items-center bg-COLOR_SECONDARY p-2 dark:text-DARK_WHITE dark:bg-DARK_GRAY">
+        <div className="flex justify-between items-center text-DARK_BLACK bg-COLOR_PRIMARY p-2 dark:text-DARK_WHITE dark:bg-DARK_BLACK">
             <div className="flex flex-col">
-                <span className="font-semibold">Pawaris</span>
-                <span className="flex justify-end text-[8px]">Rabeab</span>
+                <span className="font-semibold">PAWARIS</span>
+                <span className="flex justify-end text-[8px]">Rab.</span>
             </div>
-            <div></div>
             <div className="flex items-center justify-center gap-2">
                 <div><IoMdMenu/></div>
-                <div className="bg-COLOR_SECONDARY dark:bg-DARK_GRAY">
-                    <ButtonPrimary title="text" className="text-DARK_WHITE bg-DARK_BLACK" onClick={() => {}}/>
-                </div>
+                <MultiLanguage/>
             </div>
         </div>
     );

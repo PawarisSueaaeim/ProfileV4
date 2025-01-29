@@ -33,12 +33,12 @@ export default function ThemeProvider({ theme, children }: Props) {
     return (
         <div className={isDarkMode}>
             {children}
-            <div className="fixed bottom-4 right-4 bg-DARK_GREEN dark:bg-COLOR_PRIMARY p-4 rounded-full hover:scale-150 duration-300 shadow-2xl">
+            <div className="fixed bottom-4 right-4 bg-COLOR_PRIMARY dark:bg-DARK_BLACK p-4 rounded-full hover:scale-150 duration-300 shadow-2xl">
                 <button className="flex justify-center items-center">
                     {isDarkMode === 'light' ? (
                         <FaRegMoon
                             onClick={() => handleOnChange("dark")}
-                            className="text-yellow-400"
+                            className="text-DARK_BLACK"
                         />
                     ) : (
                         <FiSun
