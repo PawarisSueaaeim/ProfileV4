@@ -31,13 +31,13 @@ export default function MultiLanguage({}: Props) {
         <div className="flex flex-col justify-center items-center">
             <div className="relative">
                 <div
-                    className="px-2 py-1 text-DARK_BLACK bg-COLOR_TERTIARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY rounded-md"
-                    onClick={() => setIsOpen(true)}
+                    className="px-2 py-1 text-DARK_GRAY bg-COLOR_TERTIARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY rounded-md cursor-pointer"
+                    onClick={() => setIsOpen(!isOpen)}
                 >
                     {language}
                 </div>
                 {isOpen && (
-                    <div className="absolute text-DARK_BLACK bg-COLOR_SECONDARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY shadow-2xl rounded-md">
+                    <div className="absolute text-DARK_GRAY bg-COLOR_SECONDARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY shadow-2xl rounded-md">
                         {optionLanguages.map((item, index) => {
                             return (
                                 <div

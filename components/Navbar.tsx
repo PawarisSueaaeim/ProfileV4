@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Navbar({}: Props) {
     return (
-        <div className="flex justify-between items-center text-DARK_BLACK bg-COLOR_PRIMARY p-2 dark:text-DARK_WHITE dark:bg-DARK_BLACK">
+        <div className="flex justify-between items-center bg-COLOR_PRIMARY dark:bg-DARK_BLACK p-2">
             <div className="flex flex-col">
                 <span className="font-semibold">PAWARIS</span>
                 <span className="flex justify-end text-[8px]">Rab.</span>

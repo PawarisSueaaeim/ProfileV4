@@ -64,9 +64,9 @@ export default async function RootLayout({
                                     : "dark"
                             }
                         >
-                            <div className="min-h-screen bg-COLOR_QUATERNARY dark:bg-DARK_GRAY">
+                            <div className="min-h-screen text-COLOR_QUATERNARY bg-COLOR_QUATERNARY dark:bg-DARK_GRAY">
                                 <Navbar />
-                                <div className="container">{children}</div>
+                                <div className="container text-COLOR_PRIMARY dark:text-COLOR_QUATERNARY">{children}</div>
                             </div>
                         </ThemeProvider>
                     </body>
