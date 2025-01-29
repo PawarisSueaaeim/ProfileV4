@@ -1,4 +1,6 @@
+import ButtonPrimary from "@/common/button/ButtonPrimary";
 import CardPrimary from "@/common/card/CardPrimary";
+import DownloadResume from "@/components/homepage/DownloadResume";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -23,13 +25,14 @@ export default function Home() {
                     <div className="font-semibold text-xl md:text-3xl">
                         PAWARIS RABEAB
                     </div>
-                    <hr className="bg-DARK_GREEN dark:bg-COLOR_PRIMARY h-1 w-16" />
+                    <hr className="bg-COLOR_TERTIARY dark:bg-COLOR_PRIMARY h-1 w-16" />
                     <div className="font-semibold text-lg md:text-2xl">
                         Software Engineer
                     </div>
-                    <div className="flex justify-end font-light text-sm">
+                    <div className="flex justify-end font-light text-sm mb-10">
                         Front-End Engineer
                     </div>
+                    <DownloadResume/>
                 </div>
             </div>
         </div>

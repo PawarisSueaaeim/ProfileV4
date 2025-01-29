@@ -3,7 +3,7 @@ import "./globals.css";
 import { Inter, Noto_Sans_Thai } from "next/font/google";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layout/Navbar";
 import StoreProvider from "./StoreProvider";
 import ThemeProvider from "./ThemeProvider";
 import { cookies } from "next/headers";
