@@ -42,7 +42,7 @@ export default function MultiLanguage({}: Props) {
                             return (
                                 <div
                                     key={index}
-                                    className="hover:bg-DARK_GRAY hover:text-COLOR_QUATERNARY px-2 py-1 rounded-md"
+                                    className="hover:bg-DARK_BLACK hover:text-COLOR_QUATERNARY px-2 py-1 rounded-md duration-500 cursor-pointer"
                                     onClick={() => handleOnClick(item)}
                                 >
                                     {item}

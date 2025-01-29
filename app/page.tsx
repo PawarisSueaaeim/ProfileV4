@@ -23,14 +23,14 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center">
                 <div>
                     <div className="font-semibold text-xl md:text-3xl">
-                        PAWARIS RABEAB
+                        {t('name')}
                     </div>
                     <hr className="bg-COLOR_TERTIARY dark:bg-COLOR_PRIMARY h-1 w-16" />
                     <div className="font-semibold text-lg md:text-2xl">
-                        Software Engineer
+                        {t('title')}
                     </div>
                     <div className="flex justify-end font-light text-sm mb-10">
-                        Front-End Engineer
+                        {t('position')}
                     </div>
                     <DownloadResume/>
                 </div>
