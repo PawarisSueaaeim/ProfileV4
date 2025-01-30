@@ -76,7 +76,7 @@ export default function Home() {
                                 className="flex flex-col justify-center items-center gap-2"
                             >
                                 <span className="text-4xl md:text-6xl">{item.node}</span>
-                                <span className="text-[0.45rem] text-xs">{item.name}</span>
+                                <span className="text-[0.45rem] md:text-xs">{item.name}</span>
                             </div>
                         );
                     })}

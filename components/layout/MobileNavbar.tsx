@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { tNavbarDatas } from "./Navbar";
+import Link from "next/link";
 
 type Props = {
     navbarDatas: tNavbarDatas[];
@@ -22,13 +23,13 @@ export default function MobileNavbar({ navbarDatas }: Props) {
                     <FaArrowRightLong/>
                     {navbarDatas.map((item, index) => {
                         return (
-                            <div
+                            <Link
                                 key={`${item.id}-${item.title}-${index}`}
                                 className="hover:cursor-pointer hover:opacity-40 px-6 duration-300"
-                                onClick={() => console.log(item.path)}
+                                href={item.path}
                             >
                                 {item.title}
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>
