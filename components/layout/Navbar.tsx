@@ -18,26 +18,28 @@ export default function Navbar({}: Props) {
         { id: "003", title: "Experience", path: "/experience" },
     ];
     return (
-        <div className="flex justify-between items-center bg-COLOR_PRIMARY dark:bg-DARK_BLACK p-2">
-            <div className="flex">
-                <span className="font-semibold">PAWARIS</span>
-                <span className="flex justify-end text-[8px]">Rab.</span>
-            </div>
-            <div className="hidden md:flex gap-8">
-                {navbarDatas.map((item, index) => {
-                    return (
-                        <div 
-                            key={`${item.id}-${item.title}-${index}`}
-                            className="hover:cursor-pointer hover:opacity-40 duration-500"
-                        >
-                            {item.title}
-                        </div>
-                    );
-                })}
-            </div>
-            <div className="flex items-center justify-center gap-2">
-                <MobileNavbar navbarDatas={navbarDatas}/>
-                <MultiLanguage />
+        <div className="fixed w-full text-COLOR_QUATERNARY bg-COLOR_PRIMARY dark:bg-DARK_BLACK p-2 duration-300">
+            <div className="flex justify-between items-center">
+                <div className="flex">
+                    <span className="font-semibold">PAWARIS</span>
+                    <span className="flex justify-end text-[8px]">Rab.</span>
+                </div>
+                <div className="hidden md:flex gap-8">
+                    {navbarDatas.map((item, index) => {
+                        return (
+                            <div 
+                                key={`${item.id}-${item.title}-${index}`}
+                                className="hover:cursor-pointer hover:opacity-40 duration-500"
+                            >
+                                {item.title}
+                            </div>
+                        );
+                    })}
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                    <MobileNavbar navbarDatas={navbarDatas}/>
+                    <MultiLanguage />
+                </div>
             </div>
         </div>
     );

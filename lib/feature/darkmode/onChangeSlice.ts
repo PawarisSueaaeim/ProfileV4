@@ -18,7 +18,7 @@ const onChangeSlice = createSlice({
         setIsDarkMode: (state, action) => {
             const { value } = action.payload;
             state.isDarkMode = value;
-            setCookie('theme', value, 900000);
+            setCookie('theme', state.isDarkMode, 900000);
         },
     },
 })
