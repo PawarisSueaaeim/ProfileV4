@@ -2,7 +2,6 @@
 import React from "react";
 import { store } from "@/lib/store";
 import { Provider } from "react-redux";
-import { FaMoon } from "react-icons/fa";
 
 type Props = {
     children: React.ReactNode;

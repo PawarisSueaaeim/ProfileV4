@@ -20,7 +20,7 @@ export default function ThemeProvider({ theme, children }: Props) {
         (state: RootState) => state.onChangeSlice
     );
 
-    const handleOnChange = (value: tTheme | RequestCookie | undefined) => {
+    const handleOnChange = (value: tTheme | RequestCookie ) => {
         dispatch(setIsDarkMode({ value: value }));
     };
 
@@ -28,6 +28,7 @@ export default function ThemeProvider({ theme, children }: Props) {
         if (theme) {
             handleOnChange(theme);
         }
+        return;
     }, []);
 
     return (
