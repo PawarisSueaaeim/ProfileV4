@@ -67,7 +67,7 @@ export default async function RootLayout({
                             }
                         >
                             <Navbar />
-                            <div className="text-COLOR_PRIMARY bg-white dark:bg-DARK_GRAY dark:text-DARK_WHITE w-full duration-500">
+                            <div className="text-COLOR_PRIMARY bg-white dark:bg-DARK_GRAY dark:text-DARK_WHITE w-full duration-500 py-10">
                                 {children}
                             </div>
                             <Footer />

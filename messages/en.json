@@ -4,5 +4,15 @@
         "title": "Software Engineer",
         "position": "Frontend Developer",
         "skills": "Skills"
+    },
+    "Aboutpage": {
+        "name":"MR.PAWARIS RABEAB",
+        "nickname": "PLEUM",
+        "job": "Programmer",
+        "school": "Chiang Mai University",
+        "faculty": "Engineering",
+        "major": "Computer Engineer",
+        "project": "Project",
+        "descriptions": " I graduated with a bachelor's degree from Chiang Mai University, majoring in Computer Engineering. I currently work as a frontend engineer."
     }
 }

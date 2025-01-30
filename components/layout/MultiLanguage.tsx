@@ -31,7 +31,7 @@ export default function MultiLanguage({}: Props) {
         <div className="flex flex-col justify-center items-center">
             <div className="relative">
                 <div
-                    className="px-2 py-1 text-DARK_GRAY bg-COLOR_TERTIARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY rounded-md cursor-pointer"
+                    className="px-2 py-1 text-DARK_GRAY bg-COLOR_TERTIARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY rounded-md cursor-pointer active:scale-95"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {language}
@@ -42,7 +42,7 @@ export default function MultiLanguage({}: Props) {
                             return (
                                 <div
                                     key={index}
-                                    className="hover:bg-DARK_BLACK hover:text-COLOR_QUATERNARY px-2 py-1 rounded-md duration-500 cursor-pointer"
+                                    className="hover:bg-DARK_BLACK hover:text-COLOR_QUATERNARY px-2 py-1 rounded-md duration-500 cursor-pointer active:scale-95"
                                     onClick={() => handleOnClick(item)}
                                 >
                                     {item}

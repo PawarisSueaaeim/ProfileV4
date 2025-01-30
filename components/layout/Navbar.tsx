@@ -1,7 +1,7 @@
 import React from "react";
-import { IoMdMenu } from "react-icons/io";
 import MultiLanguage from "./MultiLanguage";
 import MobileNavbar from "./MobileNavbar";
+import Link from "next/link";
 
 export type tNavbarDatas = {
     id: string;
@@ -14,30 +14,32 @@ type Props = {};
 export default function Navbar({}: Props) {
     const navbarDatas: tNavbarDatas[] = [
         { id: "001", title: "About", path: "/about" },
-        { id: "002", title: "Contact", path: "/contect" },
+        { id: "002", title: "Contact", path: "/contact" },
         { id: "003", title: "Experience", path: "/experience" },
     ];
+
     return (
         <div className="fixed w-full text-COLOR_QUATERNARY bg-COLOR_PRIMARY dark:bg-DARK_BLACK p-2 duration-300">
             <div className="flex justify-between items-center">
-                <div className="flex">
+                <Link className="flex active:scale-90 duration-150" href="/">
                     <span className="font-semibold">PAWARIS</span>
                     <span className="flex justify-end text-[8px]">Rab.</span>
-                </div>
+                </Link>
                 <div className="hidden md:flex gap-8">
                     {navbarDatas.map((item, index) => {
                         return (
-                            <div 
+                            <Link
                                 key={`${item.id}-${item.title}-${index}`}
-                                className="hover:cursor-pointer hover:opacity-40 duration-500"
+                                className="hover:cursor-pointer hover:opacity-40 duration-150 active:scale-90"
+                                href={item.path}
                             >
                                 {item.title}
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>
                 <div className="flex items-center justify-center gap-2">
-                    <MobileNavbar navbarDatas={navbarDatas}/>
+                    <MobileNavbar navbarDatas={navbarDatas} />
                     <MultiLanguage />
                 </div>
             </div>
