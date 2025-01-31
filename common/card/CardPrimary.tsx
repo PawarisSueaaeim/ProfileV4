@@ -13,7 +13,9 @@ export default function CardPrimary({ className, title, children }: Props) {
                 {title}
             </div>
             <hr className="w-full h-1 opacity-40 bg-COLOR_SECONDARY border-COLOR_SECONDARY dark:bg-DARK_BLACK dark:border-DARK_BLACK" />
-            {children}
+            <div className="p-4">
+                {children}
+            </div>
         </div>
     );
 }

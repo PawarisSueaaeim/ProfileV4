@@ -1,13 +1,20 @@
+import React from "react";
+import Image from "next/image";
 import CardPrimary from "@/common/card/CardPrimary";
 import Profile from "@/common/uicomp/Profile";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import React from "react";
+import { getTranslations } from "next-intl/server";
+import TimeLine from "@/components/about/Timeline";
+
+const baseUrl = process.env.NEXT_PUBLIC_API
 
 type Props = {};
 
-export default function About({}: Props) {
-    const t = useTranslations("Aboutpage");
+export default async function About({}: Props) {
+    const t = await getTranslations('Aboutpage');
+
+    const response = await fetch(`${baseUrl}/about`);
+    const timelineDatas = await response.json();
+
     return (
         <div className="flex flex-col w-full justify-center items-center min-h-screen">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 py-8 w-3/4">
@@ -27,14 +34,16 @@ export default function About({}: Props) {
                         <div className="font-semibold text-xl md:text-3xl">
                             {t("name")}
                         </div>
-                        <div className="flex justify-end font-light">({t("nickname")})</div>
+                        <div className="flex justify-end font-light">
+                            ({t("nickname")})
+                        </div>
                         <hr className="bg-COLOR_TERTIARY dark:bg-COLOR_PRIMARY h-1 w-16" />
                         <div>{t("descriptions")}</div>
                     </div>
                 </div>
             </div>
             <CardPrimary title={t("project")}>
-                <div></div>
+                <TimeLine timeLineDatas={timelineDatas.data}/>
             </CardPrimary>
         </div>
     );

@@ -1,5 +1,6 @@
 "use client";
 import { setLocale } from "@/lib/feature/multilanguage/onChangeLanguageSlice";
+import { RootState } from "@/lib/store";
 import { getCookieClient } from "@/utils/client/cookie";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,7 +13,7 @@ export default function MultiLanguage({}: Props) {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const { language } = useSelector(
-        (state: any) => state.onChangeMultiLanguageSlice
+        (state: RootState) => state.onChangeMultiLanguageSlice
     );
 
     const handleOnClick = async (lang: string) => {
