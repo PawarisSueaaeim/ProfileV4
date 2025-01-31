@@ -20,16 +20,16 @@ export default function TimeLine({ timeLineDatas }: Props) {
             {timeLineDatas.map((item: tTimeLineDatas) => {
                 return (
                     <li key={item.id} className="mb-10 ms-6 gap-2">
-                        <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <span className="absolute flex items-center justify-center rounded-full -start-4 ring-8 ring-white dark:ring-DARK_GRAY">
                             <Image
-                                className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                                className="w-8 h-7"
                                 src={item.image}
                                 alt={item.title}
-                                height={20}
-                                width={20}
+                                height={200}
+                                width={200}
                             />
                         </span>
-                        <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white gap-4">
+                        <h3 className="flex items-center mb-1 text-lg font-semibold text-COLOR_PRIMARY dark:text-DARK_WHITE gap-4">
                             {item.title}
                             <span
                                 className={`${

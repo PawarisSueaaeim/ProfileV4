@@ -42,7 +42,7 @@ export default async function About({}: Props) {
                     </div>
                 </div>
             </div>
-            <CardPrimary title={t("project")}>
+            <CardPrimary title={t("project")} className="w-full md:w-3/4">
                 <TimeLine timeLineDatas={timelineDatas.data}/>
             </CardPrimary>
         </div>

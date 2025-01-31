@@ -14,7 +14,7 @@ export const GET = async () => {
             },
             {
                 id: "002",
-                title: "Network Design Faculty Architectural",
+                title: "Network Design Faculty Architecture",
                 date: "Computer Networks, 2019 - 1st Semester",
                 latest: false,
                 description:

@@ -67,7 +67,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <CardPrimary title={t('skills')} className="w-3/4">
+            <CardPrimary title={t('skills')} className="w-full md:w-3/4">
                 <div className="grid grid-cols-4 md:grid-cols-6 p-8 gap-x-4 gap-y-6">
                     {skillDatas.map((item, index) => {
                         return (
