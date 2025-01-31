@@ -1,5 +1,5 @@
 export const GET = async () => {
-    let response = {
+    const response = {
         status: "OK",
         client_message: "Success",
         data: [

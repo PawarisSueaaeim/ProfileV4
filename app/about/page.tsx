@@ -3,7 +3,7 @@ import Image from "next/image";
 import CardPrimary from "@/common/card/CardPrimary";
 import Profile from "@/common/uicomp/Profile";
 import { getTranslations } from "next-intl/server";
-import TimeLine from "@/components/about/Timeline";
+import TimeLine from "@/components/about/TimeLine";
 
 const baseUrl = process.env.NEXT_PUBLIC_API
 
