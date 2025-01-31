@@ -13,9 +13,15 @@ export default function Footer({}: Props) {
                 <a href="tel:0955799772">
                     <FaSquarePhone className="text-green-500 cursor-pointer hover:scale-125 duration-300" />
                 </a>
-                <FaFacebookSquare className="text-blue-600 cursor-pointer hover:scale-125 duration-300" />
-                <FaInstagramSquare className="text-red-500 cursor-pointer hover:scale-125 duration-300" />
-                <FaLinkedin className="text-blue-700 cursor-pointer hover:scale-125 duration-300" />
+                <a href="https://www.facebook.com/pawaris.rabeab">
+                    <FaFacebookSquare className="text-blue-600 cursor-pointer hover:scale-125 duration-300" />
+                </a>
+                <a href="https://www.instagram.com/pawaris_rabeab/">
+                    <FaInstagramSquare className="text-red-500 cursor-pointer hover:scale-125 duration-300" />
+                </a>
+                <a href="https://www.linkedin.com/in/pleum-pawaris-rabeab-234292253/">
+                    <FaLinkedin className="text-blue-700 cursor-pointer hover:scale-125 duration-300" />
+                </a>
             </div>
             <span className="flex flex-end text-[0.5rem] text-COLOR_QUATERNARY">
                 Create by Pawaris Rabeab | v0.0.1
