@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 
+const baseUrl = process.env.NEXT_PUBLIC_API;
+
 export default function Error({
     error,
     reset,
@@ -11,6 +13,7 @@ export default function Error({
 }) {
     useEffect(() => {
         console.error(error);
+        console.log(baseUrl+'/about');
     }, [error]);
 
     return (

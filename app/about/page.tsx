@@ -5,7 +5,7 @@ import Profile from "@/common/uicomp/Profile";
 import { getTranslations } from "next-intl/server";
 import TimeLine from "@/components/about/TimeLine";
 
-const baseUrl = process.env.NEXT_PUBLIC_API
+const baseUrl = process.env.NEXT_PUBLIC_API;
 
 type Props = {};
 
