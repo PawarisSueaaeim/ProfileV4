@@ -20,7 +20,7 @@ export default function TimeLine({ timeLineDatas }: Props) {
             {timeLineDatas.map((item: tTimeLineDatas) => {
                 return (
                     <li key={item.id} className="mb-10 ms-6 gap-2">
-                        <span className="absolute flex items-center justify-center rounded-full -start-4 ring-8 ring-white dark:ring-DARK_GRAY">
+                        <span className="absolute flex items-center justify-center rounded-full -start-4 ring-8 bg-white ring-white dark:bg-DARK_GRAY dark:ring-DARK_GRAY">
                             <Image
                                 className="w-8 h-7"
                                 src={item.image}

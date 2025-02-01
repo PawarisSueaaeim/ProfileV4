@@ -20,6 +20,8 @@ const noto_sans_thai = Noto_Sans_Thai({
     display: "swap",
 });
 
+export const baseUrl = process.env.NEXT_PUBLIC_API;
+
 export const metadata: Metadata = {
     metadataBase: new URL("https://google.com/"),
     title: {

@@ -1,11 +1,14 @@
 import React from "react";
+import { baseUrl } from "../layout";
+import ProfileAndTimeLine from "@/components/page/ProfileAndTimeLine";
 
 type Props = {};
 
-export default function page({}: Props) {
+export default async function page({}: Props) {
+    const response = await fetch(`${baseUrl}/experience`);
+    const timelineDatas = await response.json();
+
     return (
-        <div className="flex flex-col justify-center items-center min-h-screen">
-            page
-        </div>
+        <ProfileAndTimeLine timeLineDatas={timelineDatas.data}/>
     );
 }

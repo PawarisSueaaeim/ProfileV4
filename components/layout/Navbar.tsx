@@ -14,7 +14,7 @@ type Props = {};
 export default function Navbar({}: Props) {
     const navbarDatas: tNavbarDatas[] = [
         { id: "001", title: "About", path: "/about" },
-        { id: "002", title: "Contact", path: "/contact" },
+        // { id: "002", title: "Contact", path: "/contact" },
         { id: "003", title: "Experience", path: "/experience" },
     ];
 

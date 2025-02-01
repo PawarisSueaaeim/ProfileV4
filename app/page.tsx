@@ -1,5 +1,4 @@
 import CardPrimary from "@/common/card/CardPrimary";
-import DownloadResume from "@/components/homepage/DownloadResume";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -17,6 +16,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import Profile from "@/common/uicomp/Profile";
+import DownloadResume from "@/common/download/DownloadResume";
 
 export default function Home() {
     const t = useTranslations("Homepage");

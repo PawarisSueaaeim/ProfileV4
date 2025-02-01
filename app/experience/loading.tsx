@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function Loading() {
+type Props = {};
+
+export default function Loading({}: Props) {
     return <div className="flex justify-center items-center min-h-screen">Loading...</div>;
 }
