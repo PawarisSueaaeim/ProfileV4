@@ -9,7 +9,7 @@ export const GET = () => {
                 date: "RAPID CAPITAL CO., LTD., 2023 Sep. - Currently",
                 latest: true,
                 description:
-                    "รับหน้าที่พัฒนา Web application ส่วนของหน้าบ้าน ทำงานร่วมกับทีม backend เพื่อรับส่งข้อมูลแบบ RESTfulAPIs ทั้งหมด 4 โปรเจคโดยเริ่มจาก 0 ทั้งหมด, Tech Stack ที่ใช้ ReactJs, NextJs, HTML, CSS, Tailwind CSS, JavaScript, TypeScript, Figma และ versions control โดย git และ Fork",
+                    "รับหน้าที่พัฒนา Web application ส่วนของหน้าบ้าน ออกแบบ UX/UI ทำงานร่วมกับทีม backend เพื่อรับส่งข้อมูลแบบ RESTfulAPIs ทั้งหมด 4 โปรเจคโดยเริ่มจาก 0 ทั้งหมด, Tech Stack ที่ใช้ ReactJs, NextJs, HTML, CSS, Tailwind CSS, JavaScript, TypeScript, Figma และ versions control โดย git และ Fork",
                 image: "/pictures/rapid-logo.png",
             },
             {
@@ -18,7 +18,7 @@ export const GET = () => {
                 date: "MUNGMEE ECOMMERCE CO., LTD., LTD.,  2022 Sep. - 2023 Sep.",
                 latest: false,
                 description:
-                    "รับหน้าที่สร้าง Feature, Fix, Refactor Web application ส่วนของหน้าบ้าน ทำงานร่วมกับทีม backend เพื่อรับส่งข้อมูลแบบ RESTfulAPIs ทั้งหมด 2 โปรเจค Tech Stack ที่ใช้ ReactJs, NextJs, VueJs, NuxtJs, HTML, CSS, MUI, JavaScript, TypeScript, Jest, Cypress, Figma และ versions control โดย git และ Fork",
+                    "รับหน้าที่สร้าง Feature, Fix, Refactor Web application ส่วนของหน้าบ้าน ทำงานร่วมกับทีม backend เพื่อรับส่งข้อมูลแบบ RESTfulAPIs ทั้งหมด 2 โปรเจค Tech Stack ที่ใช้ ReactJs, NextJs, VueJs, NuxtJs, HTML, CSS, MUI, JavaScript, TypeScript, Jest, Cypress และ versions control โดย git และ Fork",
                 image: "/pictures/mungmee_logo.jpeg",
             },
             {
