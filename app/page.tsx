@@ -2,19 +2,9 @@ import CardPrimary from "@/common/card/CardPrimary";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaFigma, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiAdobexd, SiJira, SiMui, SiPostman, SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiRedux } from "react-icons/si";
-import { SiPostman } from "react-icons/si";
-import { SiJira } from "react-icons/si";
-import { SiMui } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
 import Profile from "@/common/uicomp/Profile";
 import DownloadResume from "@/common/download/DownloadResume";
 
@@ -34,6 +24,8 @@ export default function Home() {
         { name: "Bootstrap", node: <FaBootstrap /> },
         { name: "Postman", node: <SiPostman /> },
         { name: "Jira", node: <SiJira /> },
+        { name: "Figma", node: <FaFigma/> },
+        { name: "AdobeXD", node: <SiAdobexd />},
         { name: "NodeJs", node: <FaNodeJs /> },
     ];
 
