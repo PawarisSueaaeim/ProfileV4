@@ -39,7 +39,7 @@ export default function ThemeProvider({ theme, children }: Props) {
                     {isDarkMode === 'light' ? (
                         <FaRegMoon
                             onClick={() => handleOnChange("dark")}
-                            className="text-DARK_BLACK"
+                            className="text-DARK_WHITE"
                         />
                     ) : (
                         <FiSun

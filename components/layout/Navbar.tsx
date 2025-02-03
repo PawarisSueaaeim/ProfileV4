@@ -19,7 +19,7 @@ export default function Navbar({}: Props) {
     ];
 
     return (
-        <div className="fixed w-full text-COLOR_PRIMARY bg-white dark:bg-DARK_BLACK p-2 duration-300 z-[98] shadow-2xl">
+        <div className="fixed w-full text-COLOR_PRIMARY bg-white dark:bg-DARK_BLACK dark:text-DARK_WHITE p-2 duration-300 z-[98] shadow-2xl">
             <div className="flex justify-between items-center">
                 <Link className="flex active:scale-90 duration-150" href="/">
                     <span className="font-semibold">PAWARIS</span>
