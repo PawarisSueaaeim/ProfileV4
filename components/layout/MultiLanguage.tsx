@@ -32,7 +32,7 @@ export default function MultiLanguage({}: Props) {
         <div className="flex flex-col justify-center items-center">
             <div className="relative">
                 <div
-                    className="px-2 py-1 text-DARK_GRAY bg-COLOR_TERTIARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY rounded-md cursor-pointer active:scale-95"
+                    className="px-2 py-1 text-COLOR_PRIMARY bg-COLOR_QUATERNARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY rounded-md cursor-pointer active:scale-95"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {language}

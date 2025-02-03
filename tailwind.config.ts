@@ -29,6 +29,19 @@ export default {
                 DARK_GREEN: DARK_GREEN,
                 DARK_WHITE: DARK_WHITE,
             },
+            keyframes: {
+                spin: {
+                    from: {
+                        transform: "rotate(0deg)",
+                    },
+                    to: {
+                        transform: "rotate(360deg)",
+                    },
+                },
+            },
+            animation: {
+                spin: "spin 3s linear infinite",
+            },
         },
     },
     plugins: [],

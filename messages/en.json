@@ -3,10 +3,14 @@
         "name": "PAWARIS RABEAB",
         "title": "Software Engineer",
         "position": "Frontend Developer",
+        "descriptions1": "Love Technology",
+        "descriptions2": "Passionate About Coding",
+        "descriptions3": "Responsible and Punctual",
+        "descriptions4": "Always Improving",
         "skills": "Skills"
     },
     "Aboutpage": {
-        "name":"MR.PAWARIS RABEAB",
+        "name": "MR.PAWARIS RABEAB",
         "nickname": "PLEUM",
         "job": "Programmer",
         "school": "Chiang Mai University",
