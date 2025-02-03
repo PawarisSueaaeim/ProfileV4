@@ -8,7 +8,7 @@ type Props = {
 
 export default function CardPrimary({ className, title, children }: Props) {
     return (
-        <div className={`${className} rounded-lg shadow-2xl p-2 md:p-4 opacity-100 z-40`}>
+        <div className={`${className} bg-white dark:bg-DARK_GRAY rounded-lg shadow-2xl p-2 md:p-4 opacity-100 z-40`}>
             <div className="flex justify-center items-center font-semibold text-3xl p-6">
                 {title}
             </div>

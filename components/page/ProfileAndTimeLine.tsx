@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default async function ProfileAndTimeLine({timeLineDatas}: Props) {
-    const t = await getTranslations("Aboutpage");
+    const t = await getTranslations("Experiencepage");
 
     return (
         <div className="flex flex-col w-full justify-center items-center min-h-screen">
