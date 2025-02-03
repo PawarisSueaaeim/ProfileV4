@@ -16,7 +16,7 @@ export default function MobileNavbar({ navbarDatas }: Props) {
         <div className="md:hidden">
             <IoMdMenu onClick={() => setIsOpen(!isOpen)} />
             <div
-                className={`fixed ${isOpen ? 'right-0 top-0 duration-300' : 'right-[-100%] duration-300' } min-h-screen w-40 bg-COLOR_PRIMARY dark:bg-DARK_BLACK z-[99]`}
+                className={`fixed ${isOpen ? 'right-0 top-0 duration-300' : 'right-[-100%] duration-300' } text-white min-h-screen w-40 bg-COLOR_PRIMARY dark:bg-DARK_BLACK z-[99]`}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <div className="relative flex flex-col justify-center gap-4 py-4 px-2">
