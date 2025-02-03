@@ -68,18 +68,20 @@ export default async function RootLayout({
                                     : "dark"
                             }
                         >
-                            <Navbar />
-                            <div className="relative bg-container text-COLOR_PRIMARY bg-white dark:bg-DARK_GRAY dark:text-DARK_WHITE w-full duration-500 py-10 z-50">
-                                {children}
-                                <div className="fixed h-screen w-screen z-[-20]">
-                                    <div className="fixed h-40 w-40 ring-[2rem] ring-COLOR_SECONDARY rounded-full bottom-[-3rem] left-[-2rem] shadow-xl" />
-                                    <div className="fixed h-10 w-10 ring-4 animate-spin ring-COLOR_SECONDARY rounded-sm top-60 left-60 shadow-xl" />
-                                    <div className="fixed h-10 w-10 ring-4 animate-spin ring-COLOR_SECONDARY rounded-sm top-80 left-52 shadow-xl" />
-                                    <div className="fixed h-10 w-10 ring-4 animate-spin ring-COLOR_SECONDARY rounded-sm top-72 left-80 shadow-xl" />
-                                    <div className="fixed right-[-25rem] top-[-20rem] ring-[3rem] ring-COLOR_TERTIARY h-[50rem] w-[50rem] rounded-full shadow-xl" />
+                            <div className="relative bg-container text-COLOR_PRIMARY bg-white dark:bg-DARK_GRAY dark:text-DARK_WHITE w-full duration-500 z-50">
+                                <Navbar />
+                                <div className="py-20">
+                                    {children}
                                 </div>
+                                <div className="fixed h-screen w-screen z-[-20]">
+                                    <div className="fixed h-40 w-40 ring-[2rem] ring-COLOR_SECONDARY dark:ring-DARK_GREEN rounded-full bottom-[-3rem] left-[-2rem] shadow-xl" />
+                                    <div className="fixed h-10 w-10 ring-4 animate-spin ring-COLOR_SECONDARY dark:ring-DARK_GREEN  rounded-sm top-60 left-60 shadow-xl" />
+                                    <div className="fixed h-10 w-10 ring-4 animate-spin ring-COLOR_SECONDARY dark:ring-DARK_GREEN  rounded-sm top-80 left-52 shadow-xl" />
+                                    <div className="fixed h-10 w-10 ring-4 animate-spin ring-COLOR_SECONDARY dark:ring-DARK_GREEN  rounded-sm top-72 left-80 shadow-xl" />
+                                    <div className="fixed right-[-25rem] top-[-20rem] ring-[3rem] ring-COLOR_TERTIARY dark:ring-DARK_GREEN  h-[50rem] w-[50rem] rounded-full shadow-xl" />
+                                </div>
+                                <Footer />
                             </div>
-                            <Footer />
                         </ThemeProvider>
                     </body>
                 </NextIntlClientProvider>

@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
     return (
-        <div className="flex flex-col justify-between items-center pt-5 h-20 text-COLOR_PRIMARY bg-white dark:text-DARK_WHITE dark:bg-DARK_BLACK duration-300 shadow-2xl">
+        <div className="flex flex-col justify-between items-center pt-5 h-20 text-COLOR_PRIMARY bg-white dark:text-DARK_WHITE dark:bg-DARK_BLACK duration-300 shadow-2xl z-[9999]">
             <div className="flex gap-4 text-2xl">
                 <a href="tel:0955799772">
                     <FaSquarePhone className="text-green-500 cursor-pointer hover:scale-125 duration-300" />
