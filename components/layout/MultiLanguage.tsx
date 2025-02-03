@@ -38,7 +38,7 @@ export default function MultiLanguage({}: Props) {
                     {language}
                 </div>
                 {isOpen && (
-                    <div className="absolute text-DARK_GRAY bg-COLOR_SECONDARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY shadow-2xl rounded-md">
+                    <div className="absolute text-DARK_GRAY bg-COLOR_TERTIARY dark:text-COLOR_QUATERNARY dark:bg-DARK_GRAY shadow-2xl rounded-md">
                         {optionLanguages.map((item, index) => {
                             return (
                                 <div
