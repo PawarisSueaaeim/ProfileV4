@@ -6,10 +6,11 @@ import { getTranslations } from "next-intl/server";
 import TimeLine, { tTimeLineDatas } from "@/common/timeline/TimeLine";
 
 type Props = {
+    titleTimeLine: string;
     timeLineDatas: tTimeLineDatas[];
 };
 
-export default async function ProfileAndTimeLine({timeLineDatas}: Props) {
+export default async function ProfileAndTimeLine({timeLineDatas, titleTimeLine}: Props) {
     const t = await getTranslations("Experiencepage");
 
     return (
@@ -39,7 +40,7 @@ export default async function ProfileAndTimeLine({timeLineDatas}: Props) {
                     </div>
                 </div>
             </div>
-            <CardPrimary title={t("project")} className="w-full md:w-3/4">
+            <CardPrimary title={titleTimeLine} className="w-full md:w-3/4">
                 <TimeLine timeLineDatas={timeLineDatas}/>
             </CardPrimary>
         </div>

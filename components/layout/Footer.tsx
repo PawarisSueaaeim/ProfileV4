@@ -24,7 +24,7 @@ export default function Footer({}: Props) {
                 </a>
             </div>
             <span className="flex flex-end text-[0.5rem]">
-                Create by Pawaris Rabeab | v0.0.1
+                Create by Pawaris Rabeab | v0.0.2
             </span>
         </div>
     );
