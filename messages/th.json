@@ -1,4 +1,10 @@
 {
+    "Navigations": {
+        "about": "เกี่ยวกับ",
+        "contact": "ติดต่อ",
+        "experience": "ประสบการณ์",
+        "performances": "ผลงาน"
+    },
     "Homepage": {
         "name": "ปวริศ ระเบียบ",
         "title": "วิศวกร ซอฟแวร์",

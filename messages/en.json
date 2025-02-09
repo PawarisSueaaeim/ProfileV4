@@ -1,4 +1,10 @@
 {
+    "Navigations": {
+        "about": "About",
+        "contact": "Contact",
+        "experience": "Experience",
+        "performances": "Performances"
+    },
     "Homepage": {
         "name": "PAWARIS RABEAB",
         "title": "Software Engineer",
@@ -27,6 +33,6 @@
         "faculty": "Engineering",
         "major": "Computer Engineer",
         "experience": "Experience",
-        "descriptions": " I graduated with a bachelor's degree from Chiang Mai University, majoring in Computer Engineering. I currently work as a frontend engineer."
+        "descriptions": " I am a Software Engineer working as a Front-End Developer, focusing on enhancing user experience and ensuring responsiveness across all devices. I have a solid understanding of SEO to improve website accessibility. Currently seeking opportunities to grow as a Full-Stack Developer or Front-End Developer in a professional organization."
     }
 }

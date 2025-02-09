@@ -2,6 +2,7 @@ import React from "react";
 import MultiLanguage from "./MultiLanguage";
 import MobileNavbar from "./MobileNavbar";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
 export type tNavbarDatas = {
     id: string;
@@ -11,11 +12,13 @@ export type tNavbarDatas = {
 
 type Props = {};
 
-export default function Navbar({}: Props) {
+export default async function Navbar({}: Props) {
+    const t = await getTranslations('Navigations');
     const navbarDatas: tNavbarDatas[] = [
-        { id: "001", title: "About", path: "/about" },
-        // { id: "002", title: "Contact", path: "/contact" },
-        { id: "003", title: "Experience", path: "/experience" },
+        { id: "001", title: `${t('about')}`, path: "/about" },
+        // { id: "002", title: `${t('contact')}`, path: "/contact" },
+        { id: "003", title: `${t('experience')}`, path: "/experience" },
+        { id: "003", title: `${t('performances')}`, path: "/performances" },
     ];
 
     return (
