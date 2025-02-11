@@ -19,7 +19,20 @@ export default function Performance({}: Props) {
     ];
     return (
         <div className="min-h-screen">
-            <Carousel imageDatas={rapidImages} />
+            <div className="flex flex-col justify-center items-center gap-8">
+                <div className="">
+                    <Carousel imageDatas={rapidImages} />
+                </div>
+                <div className="flex justify-center items-center md:w-3/4">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde placeat dolore corporis nostrum animi sapiente
+                        doloremque, sint quos similique a cupiditate nihil
+                        necessitatibus in vero incidunt dolorem cumque officiis
+                        asperiores!
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

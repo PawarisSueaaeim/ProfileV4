@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 export type tImageData = {
     id: string;
@@ -11,24 +13,63 @@ type Props = {
 };
 
 export default function Carousel({ imageDatas }: Props) {
-    return <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex justify-center items-center w-screen">
-            {imageDatas.map((item, index) => {
-                return (
-                    <div key={`${item.id}-${index}`} className="">
-                        <Image
-                            src={item.image}
-                            alt={item.image}
-                            height={500}
-                            width={500}
-                            className="object-cover w-full"
-                        />
-                    </div>
-                );
-            })}
-        </div>;
-        <div className="flex justify-center items-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo facilis et dolor sequi, illum consequuntur maxime error amet aliquam voluptates repudiandae perspiciatis! Possimus vel explicabo saepe id harum dolores natus?
+    let [showIndex, setShowIndex] = useState<number>(0);
+
+    const handleOnChangeNext = () => {
+        if (showIndex < imageDatas.length - 1) {
+            setShowIndex(showIndex + 1);
+            console.log("test");
+        }
+    };
+
+    const handleOnChangePrev = () => {
+        if (showIndex > 0) {
+            setShowIndex(showIndex - 1);
+        }
+    };
+
+    useEffect(() => {
+        console.log(showIndex);
+    }, [showIndex]);
+
+    return (
+        <div className="w-[40rem]">
+            <div className="relative overflow-hidden">
+                <div
+                    className="flex h-[30rem] justify-start items-center duration-500"
+                    style={{
+                        transform: `translateX(-${showIndex * 100}%`,
+                    }}
+                >
+                    {imageDatas.map((item, index) => {
+                        return (
+                            <div
+                                key={`${item.id}-${index}`}
+                                className="min-w-[40rem] h-[30rem] flex items-center justify-center"
+                            >
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src={item.image}
+                                        alt={`image-${item.id}`}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+                <div className="absolute flex justify-between items-center top-0 z-10 w-full h-full">
+                    <FaAngleLeft
+                        className="text-3xl"
+                        onClick={() => handleOnChangePrev()}
+                    />
+                    <FaAngleRight
+                        className="text-3xl"
+                        onClick={() => handleOnChangeNext()}
+                    />
+                </div>
+            </div>
         </div>
-    </div>
+    );
 }
