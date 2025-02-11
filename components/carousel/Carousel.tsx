@@ -29,7 +29,7 @@ export default function Carousel({ imageDatas }: Props) {
     };
 
     return (
-        <div className="w-[40rem]">
+        <div className="w-full md:w-[50%]">
             <div className="relative overflow-hidden">
                 <div
                     className="flex h-[30rem] justify-start items-center duration-500"
@@ -41,7 +41,7 @@ export default function Carousel({ imageDatas }: Props) {
                         return (
                             <div
                                 key={`${item.id}-${index}`}
-                                className="min-w-[40rem] h-[30rem] flex items-center justify-center"
+                                className="min-w-[50%] h-[30rem] flex items-center justify-center"
                             >
                                 <div className="relative w-full h-full">
                                     <Image
