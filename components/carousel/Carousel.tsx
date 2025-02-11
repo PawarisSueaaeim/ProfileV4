@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 export type tImageData = {
@@ -13,7 +13,7 @@ type Props = {
 };
 
 export default function Carousel({ imageDatas }: Props) {
-    let [showIndex, setShowIndex] = useState<number>(0);
+    const [showIndex, setShowIndex] = useState<number>(0);
 
     const handleOnChangeNext = () => {
         if (showIndex < imageDatas.length - 1) {
@@ -27,10 +27,6 @@ export default function Carousel({ imageDatas }: Props) {
             setShowIndex(showIndex - 1);
         }
     };
-
-    useEffect(() => {
-        console.log(showIndex);
-    }, [showIndex]);
 
     return (
         <div className="w-[40rem]">
