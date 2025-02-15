@@ -29,9 +29,9 @@ export default async function ProfileAndTimeLine({timeLineDatas, titleTimeLine}:
                 </div>
                 <div className="flex flex-col justify-center items-center md:items-start md:max-w-[20rem]">
                     <div>
-                        <div className="font-semibold text-xl md:text-3xl">
+                        <h1 className="font-semibold text-xl md:text-3xl">
                             {t("name")}
-                        </div>
+                        </h1>
                         <div className="flex justify-end font-light">
                             ({t("nickname")})
                         </div>
