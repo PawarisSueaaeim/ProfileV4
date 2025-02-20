@@ -7,7 +7,7 @@ type Props = {};
 
 export default async function About({}: Props) {
     const response = await fetch(`${baseUrl}/about`);
-    const timelineDatas = await response.json();
+    const timelineDatas = await response?.json();
     const t = await getTranslations("Aboutpage");
 
     return (
