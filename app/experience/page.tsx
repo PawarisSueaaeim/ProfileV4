@@ -1,7 +1,6 @@
 import React from "react";
 import { baseUrl } from "../layout";
 import ProfileAndTimeLine from "@/components/page/ProfileAndTimeLine";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 type Props = {};

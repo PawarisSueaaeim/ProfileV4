@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import React from "react";
 import { FaBootstrap, FaCss3Alt, FaFigma, FaGithub, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiAdobexd, SiJira, SiMui, SiPostman, SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiAdobexd, SiJest, SiJira, SiMui, SiPostman, SiRedux, SiShadcnui, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 type Props = {};
 
@@ -20,8 +20,10 @@ export default async function CardSkills({}: Props) {
         { name: "Redux", node: <SiRedux />, color: "text-purple-700" },
         { name: "MUI", node: <SiMui />, color: "text-blue-400" },
         { name: "TailwindCSS", node: <SiTailwindcss />, color: "text-blue-500" },
+        { name: "Shadcn/ui", node: <SiShadcnui />, color: "text-black" },
         { name: "Bootstrap", node: <FaBootstrap />, color: "text-purple-600" },
         { name: "Postman", node: <SiPostman />, color: "text-orange-600" },
+        { name: "Jest", node: <SiJest />, color: "text-purple-800" },
         { name: "Jira", node: <SiJira />, color: "text-blue-500" },
         { name: "Figma", node: <FaFigma />, color: "text-red-500" },
         { name: "AdobeXD", node: <SiAdobexd />, color: "text-purple-800" },
