@@ -1,6 +1,7 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
+import { plugin } from "postcss";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,9 +11,13 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends("next/core-web-vitals", "next/typescript", "prettier", "eslint:recommended", "next" ),
   {
+    plugins: ["prettier"],
+    files: ["**/*.{ts,tsx,js,jsx}"],
     rules: {
+      "prettier/prettier": "error",
+
       // ปิด warning ของ react-hooks/exhaustive-deps
       "react-hooks/exhaustive-deps": "off",
 
@@ -24,7 +29,7 @@ const eslintConfig = [
 
       // ปิด error ที่เกิดจากตัวแปรที่ไม่ได้ใช้
       "@typescript-eslint/no-unused-vars": "off",
-    },
+    }
   },
 ];
 
