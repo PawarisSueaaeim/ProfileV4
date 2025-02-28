@@ -24,7 +24,7 @@ export default function TimeLine({ timeLineDatas }: Props) {
                             <Image
                                 className="w-8 h-7"
                                 src={item.image}
-                                alt={item.title}
+                                alt={item.image}
                                 height={200}
                                 width={200}
                             />

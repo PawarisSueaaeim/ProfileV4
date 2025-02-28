@@ -11,10 +11,14 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript", "prettier", "eslint:recommended", "next" ),
+  // ...compat.extends("next/core-web-vitals", "next/typescript", "prettier", "eslint:recommended", "next" ),
+  js.configs.recommended,
   {
     plugins: ["prettier"],
-    files: ["**/*.{ts,tsx,js,jsx}"],
+    files: ["**/*.ts", "**/*.tsx"],
+    languageOptions: {
+      parser: tsParser,
+    },
     rules: {
       "prettier/prettier": "error",
 
@@ -28,7 +32,7 @@ const eslintConfig = [
       "@typescript-eslint/no-explicit-any": "off",
 
       // ปิด error ที่เกิดจากตัวแปรที่ไม่ได้ใช้
-      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
     }
   },
 ];
