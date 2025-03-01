@@ -13,13 +13,13 @@ export default function Footer({}: Props) {
                 <a href="tel:0955799772" data-testid="tel">
                     <FaSquarePhone className="text-green-500 cursor-pointer hover:scale-125 duration-300" />
                 </a>
-                <a href="https://www.facebook.com/pawaris.rabeab">
+                <a href="https://www.facebook.com/pawaris.rabeab" data-testid="facebook">
                     <FaFacebookSquare className="text-blue-600 cursor-pointer hover:scale-125 duration-300" />
                 </a>
-                <a href="https://www.instagram.com/pawaris_rabeab/">
+                <a href="https://www.instagram.com/pawaris_rabeab/" data-testid="instagram">
                     <FaInstagramSquare className="text-red-500 cursor-pointer hover:scale-125 duration-300" />
                 </a>
-                <a href="https://www.linkedin.com/in/pleum-pawaris-rabeab-234292253/">
+                <a href="https://www.linkedin.com/in/pleum-pawaris-rabeab-234292253/" data-testid="linkedin">
                     <FaLinkedin className="text-blue-700 cursor-pointer hover:scale-125 duration-300" />
                 </a>
             </div>
