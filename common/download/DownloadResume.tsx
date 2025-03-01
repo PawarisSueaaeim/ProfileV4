@@ -11,7 +11,7 @@ export default function DownloadResume({}: Props) {
                 Download Resume
             </a>
             <div className="flex-end h-full w-auto bg-COLOR_TERTIARY dark:bg-DARK_GREEN rounded-full p-2">
-                <HiOutlineDocumentDownload className="w-8 h-8 text-black dark:text-white" />
+                <HiOutlineDocumentDownload data-testid="download-icon" className="w-8 h-8 text-black dark:text-white" />
             </div>
         </div>
     );

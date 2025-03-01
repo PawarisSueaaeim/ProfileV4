@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {
     title: string;
-    className: string;
+    className?: string;
     onClick: () => void;
 };
 
