@@ -16,7 +16,6 @@ export default async function Navbar({}: Props) {
     const t = await getTranslations('Navigations');
     const navbarDatas: tNavbarDatas[] = [
         { id: "001", title: `${t('about')}`, path: "/about" },
-        // { id: "002", title: `${t('contact')}`, path: "/contact" },
         { id: "003", title: `${t('experience')}`, path: "/experience" },
         { id: "003", title: `${t('performances')}`, path: "/performances" },
     ];
@@ -24,7 +23,7 @@ export default async function Navbar({}: Props) {
     return (
         <div className="fixed w-full text-COLOR_PRIMARY bg-white dark:bg-DARK_BLACK dark:text-DARK_WHITE p-2 duration-300 z-[98] shadow-2xl">
             <div className="flex justify-between items-center">
-                <Link className="flex active:scale-90 duration-150" href="/">
+                <Link className="flex active:scale-90 duration-150" href="/" data-testid="logo">
                     <span className="font-semibold">PAWARIS</span>
                     <span className="flex justify-end text-[8px]">Rab.</span>
                 </Link>

@@ -12,9 +12,15 @@ describe("MobileNavbar testing component", () => {
         render(<MobileNavbar navbarDatas={navbarDatas} />);
     });
 
-    // it("should show menu", () => {
-    //     navbarDatas.map((item) => {
-    //         expect(screen.getByRole("link", { name: item.title })).toBeInTheDocument();
-    //     });
-    // });
+    it("should show menu item", () => {
+        navbarDatas.map((item) => {
+            expect(screen.getByRole("link", { name: item.title })).toBeInTheDocument();
+        });
+    });
+
+    it("should line to path", () => {
+        navbarDatas.map((item) => {
+            expect(screen.getByRole("link", { name: item.title })).toHaveAttribute("href", item.path);
+        });
+    })
 });
